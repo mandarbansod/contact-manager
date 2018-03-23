@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Service", "ContactManager.Service\ContactManager.Service.csproj", "{2E2E50C4-C130-4F6E-B2AB-09997D53976A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{884BD996-9C84-4A72-B8E2-C07D0C345468}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{E0F6DED6-D32E-46A1-AA9C-C869A6EDAED7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{6D3E1D0D-B2E1-4EB8-8E62-53CE7BD01BAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappers", "Mappers", "{D5F7EF86-7455-4378-8D4A-F66682B1E8C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{551A43E0-557B-4318-934B-96352029F66B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Business", "ContactManager.Business\ContactManager.Business.csproj", "{CF25BC51-451B-4315-9EDE-EBC0A7AC445B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Controllers", "ContactManager.Controllers\ContactManager.Controllers.csproj", "{4668F077-D7B5-4649-B49A-B8FEBD30EF33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Respository", "ContactManager.Respository\ContactManager.Respository.csproj", "{77FF25BE-63F9-4D1D-A632-D89C8A75C868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Data", "ContactManager.Data\ContactManager.Data.csproj", "{47BD5422-48DE-47F0-8799-FD5D601FCC1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Mappers", "ContactManager.Mappers\ContactManager.Mappers.csproj", "{39323411-8647-4EA0-B882-D7BC3D0170DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Dto", "ContactManager.Dto\ContactManager.Dto.csproj", "{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Domain", "ContactManager.Domain\ContactManager.Domain.csproj", "{284FB9A7-EC78-400C-A5B4-AF94A7C89265}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManager.Entity", "ContactManager.Entity\ContactManager.Entity.csproj", "{12D0447B-51EE-46BC-A348-6F58CD3ACA3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{74D5376D-15C0-4FE0-8CBD-CBBC9292C904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Common", "ContactManager.Common\ContactManager.Common.csproj", "{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{20C7ABE1-E798-4115-9422-6DFB9067C6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Tests.Unit", "ContactManager.Tests.Unit\ContactManager.Tests.Unit.csproj", "{D1F3FE74-31C4-42BF-8E6D-3D48229F390F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E2E50C4-C130-4F6E-B2AB-09997D53976A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2E50C4-C130-4F6E-B2AB-09997D53976A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2E50C4-C130-4F6E-B2AB-09997D53976A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2E50C4-C130-4F6E-B2AB-09997D53976A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF25BC51-451B-4315-9EDE-EBC0A7AC445B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF25BC51-451B-4315-9EDE-EBC0A7AC445B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF25BC51-451B-4315-9EDE-EBC0A7AC445B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF25BC51-451B-4315-9EDE-EBC0A7AC445B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4668F077-D7B5-4649-B49A-B8FEBD30EF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4668F077-D7B5-4649-B49A-B8FEBD30EF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4668F077-D7B5-4649-B49A-B8FEBD30EF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4668F077-D7B5-4649-B49A-B8FEBD30EF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FF25BE-63F9-4D1D-A632-D89C8A75C868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FF25BE-63F9-4D1D-A632-D89C8A75C868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FF25BE-63F9-4D1D-A632-D89C8A75C868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FF25BE-63F9-4D1D-A632-D89C8A75C868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BD5422-48DE-47F0-8799-FD5D601FCC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BD5422-48DE-47F0-8799-FD5D601FCC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BD5422-48DE-47F0-8799-FD5D601FCC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BD5422-48DE-47F0-8799-FD5D601FCC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39323411-8647-4EA0-B882-D7BC3D0170DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39323411-8647-4EA0-B882-D7BC3D0170DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39323411-8647-4EA0-B882-D7BC3D0170DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39323411-8647-4EA0-B882-D7BC3D0170DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284FB9A7-EC78-400C-A5B4-AF94A7C89265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284FB9A7-EC78-400C-A5B4-AF94A7C89265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284FB9A7-EC78-400C-A5B4-AF94A7C89265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284FB9A7-EC78-400C-A5B4-AF94A7C89265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D0447B-51EE-46BC-A348-6F58CD3ACA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D0447B-51EE-46BC-A348-6F58CD3ACA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D0447B-51EE-46BC-A348-6F58CD3ACA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D0447B-51EE-46BC-A348-6F58CD3ACA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F3FE74-31C4-42BF-8E6D-3D48229F390F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F3FE74-31C4-42BF-8E6D-3D48229F390F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F3FE74-31C4-42BF-8E6D-3D48229F390F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F3FE74-31C4-42BF-8E6D-3D48229F390F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF25BC51-451B-4315-9EDE-EBC0A7AC445B} = {E0F6DED6-D32E-46A1-AA9C-C869A6EDAED7}
+		{4668F077-D7B5-4649-B49A-B8FEBD30EF33} = {551A43E0-557B-4318-934B-96352029F66B}
+		{77FF25BE-63F9-4D1D-A632-D89C8A75C868} = {884BD996-9C84-4A72-B8E2-C07D0C345468}
+		{47BD5422-48DE-47F0-8799-FD5D601FCC1E} = {884BD996-9C84-4A72-B8E2-C07D0C345468}
+		{39323411-8647-4EA0-B882-D7BC3D0170DF} = {D5F7EF86-7455-4378-8D4A-F66682B1E8C9}
+		{BF2D0B8F-3664-4843-BBF2-E5FA1691D8CF} = {6D3E1D0D-B2E1-4EB8-8E62-53CE7BD01BAE}
+		{284FB9A7-EC78-400C-A5B4-AF94A7C89265} = {6D3E1D0D-B2E1-4EB8-8E62-53CE7BD01BAE}
+		{12D0447B-51EE-46BC-A348-6F58CD3ACA3E} = {6D3E1D0D-B2E1-4EB8-8E62-53CE7BD01BAE}
+		{DF7EAA5A-5DB8-4FB8-9F16-814CCD6BBB52} = {74D5376D-15C0-4FE0-8CBD-CBBC9292C904}
+		{D1F3FE74-31C4-42BF-8E6D-3D48229F390F} = {20C7ABE1-E798-4115-9422-6DFB9067C6A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E28E690E-7EAB-4D8D-98E6-A062BDD1F831}
+	EndGlobalSection
+EndGlobal

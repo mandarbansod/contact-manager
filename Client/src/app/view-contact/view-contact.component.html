@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span translate>Contact Details</span>
+    </h1>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" disabled class="form-control" [value]="contact.FirstName" />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" disabled class="form-control" [value]="contact.LastName" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" disabled class="form-control" [value]="contact.Email" />
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Email</label>
+      <input type="text" disabled class="form-control" [value]="contact.PhoneNumber" />
+    </div>
+    <div class="form-check">
+      <!-- <p-checkbox name="isActive" class="checkbox" [value]="contact.IsActive" label="Is Active"></p-checkbox> -->
+      <input type="checkbox" disabled [checked]="contact.IsActive"/>
+      <label for="isActive">IsActive</label>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onBackToContactListClick()">Back To Contact List</button>
+  </form>
+</div>

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="NSubstitute" Version="3.1.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Manager\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactManager.Business\ContactManager.Business.csproj" />
+    <ProjectReference Include="..\ContactManager.Common\ContactManager.Common.csproj" />
+    <ProjectReference Include="..\ContactManager.Controllers\ContactManager.Controllers.csproj" />
+    <ProjectReference Include="..\ContactManager.Data\ContactManager.Data.csproj" />
+    <ProjectReference Include="..\ContactManager.Domain\ContactManager.Domain.csproj" />
+    <ProjectReference Include="..\ContactManager.Dto\ContactManager.Dto.csproj" />
+    <ProjectReference Include="..\ContactManager.Entity\ContactManager.Entity.csproj" />
+    <ProjectReference Include="..\ContactManager.Mappers\ContactManager.Mappers.csproj" />
+    <ProjectReference Include="..\ContactManager.Respository\ContactManager.Respository.csproj" />
+    <ProjectReference Include="..\ContactManager.Service\ContactManager.Service.csproj" />
+  </ItemGroup>
+
+</Project>

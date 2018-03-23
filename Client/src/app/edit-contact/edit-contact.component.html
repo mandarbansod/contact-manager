@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span translate>Contact Details</span>
+    </h1>
+  </div>
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input required type="text" class="form-control" name="firstName" [(ngModel)]="contact.FirstName" #firstName="ngModel" minlength="1"
+        />
+      <app-validation-message controlName="firstName"></app-validation-message>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input required type="text" class="form-control" name="lastName" [(ngModel)]="contact.LastName" #lastName="ngModel" minlength="1"/>
+      <app-validation-message controlName="lastName"></app-validation-message>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input required type="email" email class="form-control" name="email" [(ngModel)]="contact.Email" #email="ngModel" />
+      <app-validation-message controlName="email"></app-validation-message>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label>
+      <input required type="text" pattern="[0-9]*"
+      minlength="10"
+      maxlength="10" 
+      class="form-control" name="phoneNumber" [(ngModel)]="contact.PhoneNumber" #phoneNumber="ngModel" />
+      <app-validation-message controlName="phoneNumber"></app-validation-message>
+    </div>
+    <div class="form-check ">
+      <!-- <p-checkbox name="isActive " class="checkbox " [(ngModel)]="contact.IsActive " label="Is Active "></p-checkbox> -->
+      <input type="checkbox" checked="contact.IsActive " name="isActive " />
+      <label for="isActive ">IsActive</label>
+    </div>
+    <button type="submit " class="btn btn-primary " [disabled]="!contactForm.form.valid ">Save</button>
+    <button type="button " class="btn btn-primary " (click)="onCancelClick() ">Cancel</button>
+  </form>
+</div>
+
+<p-growl [value]="msgs "></p-growl>

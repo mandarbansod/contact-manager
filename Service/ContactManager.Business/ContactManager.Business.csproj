@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactManager.Common\ContactManager.Common.csproj" />
+    <ProjectReference Include="..\ContactManager.Domain\ContactManager.Domain.csproj" />
+    <ProjectReference Include="..\ContactManager.Dto\ContactManager.Dto.csproj" />
+    <ProjectReference Include="..\ContactManager.Entity\ContactManager.Entity.csproj" />
+    <ProjectReference Include="..\ContactManager.Mappers\ContactManager.Mappers.csproj" />
+    <ProjectReference Include="..\ContactManager.Respository\ContactManager.Respository.csproj" />
+  </ItemGroup>
+
+</Project>

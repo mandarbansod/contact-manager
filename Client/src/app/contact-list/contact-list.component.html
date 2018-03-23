@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>
+            <span class=" text-center" translate>Contact List</span>
+        </h1>
+        <div>
+            <a class="btn btn-primary" [routerLink]="getRouterLinkForAddContact()">Add Contact</a>
+        </div>
+        <p>
+            <p-dataTable [value]="contactList" selectionMode='single' [responsive]="true" no>
+                <p-column field="FirstName" header="First Name" [sortable]="true">
+                    <ng-template let-contactRow="rowData" pTemplate="body">
+                        <a [routerLink]='getRouterLinkForViewContact(contactRow)'>
+                            <u>{{contactRow.FirstName}}</u>
+                        </a>
+                    </ng-template>
+                </p-column>
+                <p-column field="LastName" header="Last Name" [sortable]="true"></p-column>
+                <p-column field="Email" header="Email" [sortable]="true"></p-column>
+                <p-column field="PhoneNumber" header="Phone Number" [sortable]="true"></p-column>
+                <p-column field="IsActive" header="IsActive" [sortable]="true"></p-column>
+                <p-column styleClass="col-button" [style]='{ "width" : "30px"}'>
+                    <ng-template let-contactRow="rowData" pTemplate="body">
+                        <a [routerLink]='getRouterLinkForEditContact(contactRow)' class="fa fa-pencil"></a>
+                    </ng-template>
+                </p-column>
+                <p-column styleClass="col-button" [style]='{ "width" : "30px"}'>
+                    <ng-template let-contactRow="rowData" pTemplate="body">
+                        <a (click)='deleteSelectedContact(contactRow)' class="fa fa-trash"></a>
+                    </ng-template>
+                </p-column>
+            </p-dataTable>
+        </p>
+    </div>
+</div>
+
+<p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425">
+</p-confirmDialog>
+<p-growl [value]="msgs"></p-growl>

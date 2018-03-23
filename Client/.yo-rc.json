@@ -1,0 +1,18 @@
+{
+  "generator-ngx-rocket": {
+    "version": "4.0.0",
+    "props": {
+      "target": [
+        "web"
+      ],
+      "pwa": false,
+      "ui": "bootstrap",
+      "auth": false,
+      "lazy": true,
+      "appName": "contact-manager",
+      "projectName": "contact-manager",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  }
+}
